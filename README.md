@@ -8,8 +8,4 @@ Integrado por:
 - González Nicolás
 - Karzovnik Mirco
 - Palleres Rocío
-<<<<<<< HEAD
 - Hernan Raso
-=======
-- Hernan Raso
->>>>>>> 8dbb2f2a747d2406be772496af3645f1bff40e65
