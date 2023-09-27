@@ -82,6 +82,38 @@ public class HolaMundo {
         System.out.println("numDouble = "+ numDouble);
         System.out.println("Valor minimo del double: "+ Double.MIN_VALUE);
         System.out.println("Valor maximo del double: "+ Double.MAX_VALUE);
+        
+        //inferencia de tipos var y tipos primitivos
+        var numEntero = 20;
+        System.out.println("numEntero = " + numEntero);
+        var numFloat = 10.0F;
+        System.out.println("numFloat = " + numFloat);
+        var numDouble = 10.0;
+        System.out.println("numDouble = " + numDouble);
+        
+        
+        //tipos primitivos char
+        char miVariableChar = 'a';
+        System.out.println("miVariableChar = " + miVariableChar);
+        
+        char varCaracter = '\u0024';//indicamos a java la asignacion con el codigo unicode
+        System.out.println("miVariableChar = " + varCaracter);
+        char varCaracterDecimal = 36;//valor decimal del juego de carateres unicode
+        System.out.println("varCaracterDecimal = " + varCaracterDecimal);
+        char varCaracterSimbolo = '$';//un caracter especial, podemos copiar y pegar desde unicode
+        System.out.println("varCaracterSimbolo = " + varCaracterSimbolo);
+        
+        var varCaracter1 = '\u0024';
+        System.out.println("miVariableChar = " + varCaracter1);
+        var varCaracterDecimal1 = 36;
+        System.out.println("varCaracterDecimal = " + varCaracterDecimal1);
+        var varCaracterSimbolo1 = '$';
+        System.out.println("varCaracterSimbolo = " + varCaracterSimbolo1);
+        
+        int varEnteroChar = '$';
+        System.out.println("varEnteroChar = " + varEnteroChar);
+        int CaracterChar = 'b';
+        System.out.println("CaracterChar = " + CaracterChar);
         */
     }
 }
