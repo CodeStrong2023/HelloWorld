@@ -82,6 +82,85 @@ public class HolaMundo {
         System.out.println("numDouble = "+ numDouble);
         System.out.println("Valor minimo del double: "+ Double.MIN_VALUE);
         System.out.println("Valor maximo del double: "+ Double.MAX_VALUE);
+        
+        //inferencia de tipos var y tipos primitivos
+        var numEntero = 20;
+        System.out.println("numEntero = " + numEntero);
+        var numFloat = 10.0F;
+        System.out.println("numFloat = " + numFloat);
+        var numDouble = 10.0;
+        System.out.println("numDouble = " + numDouble);
+        
+        
+        //tipos primitivos char
+        char miVariableChar = 'a';
+        System.out.println("miVariableChar = " + miVariableChar);
+        
+        char varCaracter = '\u0024';//indicamos a java la asignacion con el codigo unicode
+        System.out.println("miVariableChar = " + varCaracter);
+        char varCaracterDecimal = 36;//valor decimal del juego de carateres unicode
+        System.out.println("varCaracterDecimal = " + varCaracterDecimal);
+        char varCaracterSimbolo = '$';//un caracter especial, podemos copiar y pegar desde unicode
+        System.out.println("varCaracterSimbolo = " + varCaracterSimbolo);
+        
+        var varCaracter1 = '\u0024';
+        System.out.println("miVariableChar = " + varCaracter1);
+        var varCaracterDecimal1 = 36;
+        System.out.println("varCaracterDecimal = " + varCaracterDecimal1);
+        var varCaracterSimbolo1 = '$';
+        System.out.println("varCaracterSimbolo = " + varCaracterSimbolo1);
+        
+        int varEnteroChar = '$';
+        System.out.println("varEnteroChar = " + varEnteroChar);
+        int CaracterChar = 'b';
+        System.out.println("CaracterChar = " + CaracterChar);
+        
+        
+        //tipos primitivos tipos booleanos
+        boolean varBool = true;
+        System.out.println("varBool = " + varBool);
+        
+        if(varBool){
+        System.out.println("la bandera es verde");
+        }
+        else{
+            System.out.println("la bandera es roja");
+        }
+        
+        //algoritmo: ¿es mayor de edad?
+        var edad = 20;
+        //var mayor = edad >= 18;
+        if(edad >=18){
+            System.out.println("es mayor de edad");
+        }
+        else{
+            System.out.println("es menor de edad");
+        }
+        
+        //conversion de tipos primitivos
+        var edad = Integer.parseInt("20");
+        System.out.println("edad = " + (edad + 1));
+        var valorPI = Double.parseDouble("3.1416");
+        System.out.println("valorPI = " + valorPI);
+        
+        //pedir un valor 
+        var entrada = new Scanner(System.in);
+        System.out.println("Digite su edad");
+        edad = Integer.parseInt(entrada.nextLine());
+        System.out.println("edad = " + edad);
+        
+        
+        //conversion de tipos primitivos en java parte 2
+        var edadTexto = String.valueOf(10);
+        System.out.println("edadTexto = " + edadTexto);
+        
+        var fraseChar = "programadores".charAt(12);
+        System.out.println("fraseChar = " + fraseChar);
+        
+        var entrada = new Scanner(System.in);
+        System.out.println("digite un caracter: ");
+        fraseChar = entrada.nextLine().charAt(0);
+        System.out.println("fraseChar = " + fraseChar);
         */
     }
 }
