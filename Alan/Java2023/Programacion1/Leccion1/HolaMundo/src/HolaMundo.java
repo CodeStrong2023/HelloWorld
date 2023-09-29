@@ -114,6 +114,53 @@ public class HolaMundo {
         System.out.println("varEnteroChar = " + varEnteroChar);
         int CaracterChar = 'b';
         System.out.println("CaracterChar = " + CaracterChar);
+        
+        
+        //tipos primitivos tipos booleanos
+        boolean varBool = true;
+        System.out.println("varBool = " + varBool);
+        
+        if(varBool){
+        System.out.println("la bandera es verde");
+        }
+        else{
+            System.out.println("la bandera es roja");
+        }
+        
+        //algoritmo: ¿es mayor de edad?
+        var edad = 20;
+        //var mayor = edad >= 18;
+        if(edad >=18){
+            System.out.println("es mayor de edad");
+        }
+        else{
+            System.out.println("es menor de edad");
+        }
+        
+        //conversion de tipos primitivos
+        var edad = Integer.parseInt("20");
+        System.out.println("edad = " + (edad + 1));
+        var valorPI = Double.parseDouble("3.1416");
+        System.out.println("valorPI = " + valorPI);
+        
+        //pedir un valor 
+        var entrada = new Scanner(System.in);
+        System.out.println("Digite su edad");
+        edad = Integer.parseInt(entrada.nextLine());
+        System.out.println("edad = " + edad);
+        
+        
+        //conversion de tipos primitivos en java parte 2
+        var edadTexto = String.valueOf(10);
+        System.out.println("edadTexto = " + edadTexto);
+        
+        var fraseChar = "programadores".charAt(12);
+        System.out.println("fraseChar = " + fraseChar);
+        
+        var entrada = new Scanner(System.in);
+        System.out.println("digite un caracter: ");
+        fraseChar = entrada.nextLine().charAt(0);
+        System.out.println("fraseChar = " + fraseChar);
         */
     }
 }
