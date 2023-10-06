@@ -68,3 +68,53 @@ def listarNombres(*nombres):
         print(nombre)
 listarNombres("Flor", "Regi", "Rufi", "Santi")
 listarNombres("Jorge", "Vero", "Facu", "Rami", "Nere", "Pauli")
+
+def listarTerminos(**terminos): #Lo mas utilizado es **kwargs para recibir los argumentos
+    for llave, valor in terminos.items():
+        print(f"{llave} : {valor}")
+
+listarTerminos() # No recibe nada, nada se va a mostrar
+listarTerminos(IDE="Integrated Develoment Enviroment", PK="Primaruy Key")
+listarTerminos(Nombre="Lionel Messi")
+
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+nombres2= ["Tito", "Pedro", "Carlos"]
+desplegarNombres(nombres2)
+desplegarNombres("Carla")
+# desplegarNombres(10) # No es un objeto iterable
+desplegarNombres((10, 11)) # La convertimos a una tupla
+desplegarNombres([22, 55]) # La convertimos en una lista
+
+# Funciones Recursivas
+def factorial(numero):
+    if numero == 1: # Caso Base
+        return 1
+    else:
+        return numero * factorial(numero-1) # Caso Recursivo
+
+resultado = factorial(5) # Lo hacemos en código duro
+print(f"El factorial del número 5 es: {resultado}") # Tarea que el usuario ingrese el número para calcular el factorial
+
+# TAREA
+def calcular_factorial(numero):
+    factorial = 1
+    if numero < 0:
+        return "No se puede calcular el factorial de un número negativo"
+    elif numero == 0:
+        return "El factorial de 0 es 1"
+    else:
+        for i in range(1, numero + 1):
+            factorial *= i
+        return f"El factorial de {numero} es {factorial}"
+
+while True:
+    numero_str = input("Ingresa un número para calcular su factorial: ")
+    if numero_str.isdigit():
+        numero = int(numero_str)
+        resultado2 = calcular_factorial(numero)
+        print(resultado2)
+        break
+    else:
+        print("ERROR. Ingrese un número entero válido")
