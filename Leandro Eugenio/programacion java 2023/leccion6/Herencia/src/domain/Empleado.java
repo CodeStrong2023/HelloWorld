@@ -1,24 +1,26 @@
-
 package domain;
 
-public class Empleado extends Persona{
-   private int idEmpleado;
-   private double sueldo;
-   private static int contadorEmpleado;
-   
-   //Constructor
+public class Empleado extends Persona {
 
-    public Empleado(String nombre,double sueldo) {
-        super(nombre);
+    private int idEmpleado;
+    private double sueldo;
+    private static int contadorEmpleado;
+
+    //Constructor
+    public Empleado() { //constructor 1
         this.idEmpleado = ++Empleado.contadorEmpleado;
+    }
+
+    public Empleado(String nombre, double sueldo) { //constructor 2
+        //super(nombre);
+        this(); //Estamos llamando desde aqui al constructor vacio
+        this.nombre = nombre;
         this.sueldo = sueldo;
     }
 
     public int getIdEmpleado() {
         return idEmpleado;
     }
-
-    
 
     public double getSueldo() {
         return sueldo;
@@ -38,8 +40,4 @@ public class Empleado extends Persona{
         return sb.toString();
     }
 
-    
-    
-    
-   
 }
