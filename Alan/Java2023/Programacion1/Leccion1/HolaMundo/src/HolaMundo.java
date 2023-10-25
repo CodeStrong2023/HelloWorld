@@ -161,6 +161,169 @@ public class HolaMundo {
         System.out.println("digite un caracter: ");
         fraseChar = entrada.nextLine().charAt(0);
         System.out.println("fraseChar = " + fraseChar);
+        
+        int num1 = 5, num2 = 4;
+        var solucion = num1 + num2;
+        System.out.println("solucion de la suma = " + solucion );
+        
+        solucion = num1 - num2;
+        System.out.println("solucion de la resta = " + solucion);
+        
+        solucion = num1 * num2;
+        System.out.println("solucion de la multiplicacion = " + solucion);
+        
+        solucion = num1 / num2;
+        System.out.println("solucion de la division = " + solucion);
+        
+        var solucion2 = 3.4 / num2;
+        System.out.println("solucion2 resultado de la division = " + solucion2);
+        
+        solucion = num1 % num2; //guarda el residuo entero de la division
+        System.out.println("solucion = " + solucion);
+        
+        if (num2 % 2 == 0)
+            System.out.println("Es un numero par");
+        else
+            System.out.println("Es un numero impar");
+        
+        int varNum1 = 10, varNum2 = 40;
+        int varNum3 = varNum1 + 6 - varNum2;
+        System.out.println("varNum3 = " + varNum3);
+        
+        varNum1 += 1;
+        System.out.println("varNum1 = " + varNum1);
+        
+        varNum1 -= 2;
+        System.out.println("varNum1 = " + varNum1);
+        
+        varNum1 *= 5;
+        System.out.println("varNum1 = " + varNum1);
+        
+        varNum1 /= 4;
+        System.out.println("varNum1 = " + varNum1);
+        
+        varNum1 %= 6;
+        System.out.println("varNum1 = " + varNum1);
+        
+        //Operadores unarios: Cambio de signo
+        var varA = 7;
+        var varB = -varA;
+        System.out.println("varA = " + varA);
+        System.out.println("varB = " + varB);//resultado negativo
+        
+        var varC = true;
+        var varD = !varC;
+        System.out.println("varC = " + varC);
+        System.out.println("varD = " + varD);
+        
+        var varE = 9; //se va a modificar su valor
+        var varF = ++varE; //simbolo antes de la variable
+        //primero se incrementa la variable y despues se usa su valor
+        System.out.println("varE = " + varE);
+        System.out.println("varF = " + varF);//se suma uno
+        
+        //Postincremento (el simbolo va despues de la variable)
+        var varG = 3;
+        var varH = varG++;//primero el valor de la variable luego el incremento
+        System.out.println("varG = " + varG);
+        System.out.println("varH = " + varH);
+        
+        //operadores unarios de decremento: predecremento
+        var varI = 4;
+        var varJ = --varI;
+        System.out.println("varI = " + varI);//la variable ya esta con decremento
+        System.out.println("varJ = " + varJ);
+        
+        //postdecremento
+        var varK = 8;
+        var varL = varK--;
+        System.out.println("varK = " + varK);// aqui decrementa en 1
+        System.out.println("varL = " + varL);
+        
+        //operadores de igualdad relacionales
+        var aNum = 5;
+        var bNum = 4;
+        var cNum = (aNum == bNum);
+        System.out.println("cNum = " + cNum);
+        
+        var dNum = aNum != bNum;
+        System.out.println("dNum = " + dNum);
+        
+        var cadenaA = "Hello";
+        var cadenaB = "Hello";
+        var cVar = cadenaA == cadenaB;
+        System.out.println("cVar = " + cVar);
+        
+        var fVar = cadenaA.equals(cadenaB);
+        System.out.println("fVar = " + fVar);
+        
+        var gVar = aNum >= bNum;// >=, <=, ==, !=
+        System.out.println("gVar = " + gVar);
+        
+        if (aNum % 2 == 0){
+            System.out.println("El numero es par");
+        } else {
+            System.out.println("El numero es impar");
+        }
+        
+        var edad = 15;
+        var adulto = 18;
+        if (edad >= adulto){
+            System.out.println("Es mayor de edad");
+        } else {
+            System.out.println("Es menor de edad");
+        }       
+
+        var valorA = 7;
+        var valorMinimo = 0;
+        var valorMaximo = 10;
+        var respuesta = valorA >= 0 && valorA <= 10; //and= && esta condicion es falsa si uno de los dos es falso
+
+        if (respuesta) {
+            System.out.println("Esta dentro del rango establecido");
+        } else {
+            System.out.println("Esta fuera del rango establecido");
+        }
+
+        var vacaciones = false;
+        var diaLibre = false;
+        if (vacaciones || diaLibre) //or= || esta condicion es falsa si los 2 son falsos (vacaciones = false, diaLibre = false)
+            System.out.println("Papá puede asistir al juego de su hijo");
+        else
+            System.out.println("Papá no puede asistir al juego de su hijo");
+        
+        //operador ternario
+        var resultadoT = (5>4) ? "verdadero" : "falso";
+        System.out.println("resultadoT = " + resultadoT);
+        
+        var numeroT = 7;
+        resultadoT = (numeroT % 2 ==0) ? "es par" : "es impar";
+        System.out.println("resultadoT = " + resultadoT);
+        
+        var x = 5;
+        var y = 10;
+        var z = ++x + y--; // se lee de izquierda a derecha, eso significa que el ++ de x no se aplica a la suma
+        System.out.println("x = " + x);// 6
+        System.out.println("y = " + y);// 9
+        System.out.println("z = " + z);// 16
+        
+        var solucionAritmetica = 4 + 5 * 6 / 3;//4 + ((5 * 6) / 3) = 30 / 3 = 10 + 4 = 14
+        System.out.println("solucionAritmetica = " + solucionAritmetica);
+        
+        solucionAritmetica = (4+5) * 6/3;//4+5 = 9 * 6 = 54 / 3 = 18
+        System.out.println("solucionAritmetica = " + solucionAritmetica);
+        
+        //ejercicios: Area y Perimetro de un rectangulo.
+        var Altura = 7;
+        var Ancho = 12;
+        var Perimetro = (2*Altura) + (2*Ancho);
+        var Area = Altura*Ancho;
+        System.out.println("Perimetro = " + Perimetro);
+        System.out.println("Area = " + Area);
+        
+        //ejercicios: El mayor de dos números (Operador Ternario)
+        int numUno = 10, numDos = 9;
+        System.out.println("numero mayor: " + ((numUno>numDos)? "numUno es mayor": "numDos es mayor"));
         */
     }
 }
