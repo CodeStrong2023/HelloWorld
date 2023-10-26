@@ -27,7 +27,7 @@ public class CicloWhile {
         }
         System.out.println("---------------------------");
         
-        for (var contando = 0; contando < 7; contando++) {
+        for (var contando = 0; contando < 7; contando++) { //(inicio = ?; finalcondicional < ?; contador++)
             if (contando % 2 != 0) {
                 continue; //vamos a la siguiente iteracion              
             }
