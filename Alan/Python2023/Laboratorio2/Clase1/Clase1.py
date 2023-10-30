@@ -197,7 +197,7 @@ print(lista3)
 lista = [1,2,3] * 2
 print(lista)
 
-#metodos de ordenamiento
+#metodos de ordenamiento, en python es una funcion
 lista3.sort()#ubica los elementos ascendentemente
 print(lista3)
 lista3.sort(reverse=True)#ubica los elementos descendentemente
@@ -210,3 +210,132 @@ print(tupla)
 print(4 in tupla)#accion tipo booleana
 #dentro de tuplas podemos usar: index, count, len
 #en tuplas se puede convertir en tupla a lista y de lista a tupla
+
+#repaso de set o conjunto
+#para definir un conjunto
+conjunto2 = set()
+conjunto1 = {"bye",}
+conjunto2.add(7)
+conjunto2.add("Hola")
+print(conjunto2)
+conjunto1.add("Hola")
+print(conjunto1)
+print(3 in conjunto1)# preguntamos si el 3 esta en conjunto1
+
+#comparar dos conjuntos para saber si son iguales
+print(conjunto1 == conjunto2) #nos devuelve como respuesta un booleano
+
+#operaciones en conjuntos
+conjunto3 = conjunto1 | conjunto2 #la linea une los dos conjuntos
+print(conjunto3)
+
+conjunto3 = conjunto1 & conjunto2 #que elemento tienen en comun
+print(conjunto3)
+
+conjunto3 = conjunto1 - conjunto2 #asigna el valor que esta en el conjunto 1 y no en el conjunto 2
+print(conjunto3)
+conjunto3 = conjunto2 - conjunto1 #asigna el valor que esta en el conjunto 2 y no en el conjunto 1
+print(conjunto3)
+
+conjunto3 = conjunto1 ^ conjunto2 #elementos que no comparten o que son diferentes entre ambos
+print(conjunto3)
+
+conjunto3 = conjunto1 | conjunto2
+print(conjunto2.issubset(conjunto3))# aqui preguntamos si un conjunto es un subconjunto dentro de otro
+print(conjunto1.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+print(conjunto3.issuperset(conjunto1))# preguntamos si los elementos del conjunto1 estan dentro del 3
+print(conjunto3.issuperset(conjunto2))# si es verdadero quiere decir que el conjunto3 es un superconjunto
+print(conjunto2.issuperset(conjunto3))
+
+#como saber si ambos conjuntos son disconexos, esto es si no comparten elementos en comun
+print(conjunto1.isdisjoint(conjunto2))#no hay cosas en comun
+
+#convertir un conjunto totalmente inmutable
+conjunto1 = frozenset #esto hace que el conjuntos sea totalmente inmutable
+#no se puede agregar, modificar ni eliminar los elementos del conjunto
+
+#repaso diccionarios
+diccionarioNuevo = {"azul":"blue","rojo":"red","verde":"green","amarillo":"yellow"}
+print(diccionarioNuevo)
+
+#como eliminar
+del (diccionarioNuevo["azul"])
+print(diccionarioNuevo)
+
+#los diccionarios almacenan diferentes tipos de datos
+diccionario2 = {"Ariel":{"edad":40,"altura":1.83}, "Osvaldo": [45, 1.85], "Natalia":[35, 1.67]}
+print(diccionario2)
+
+seleccionArgentina = {
+    10: {"Nombre":"Lionel Messi", "Edad":35, "altura":1.70, "Precio":"50 millones", "posicion":"Extremos derecho"},
+    11: {"Nombre":"Angel Di maria", "Edad":34, "altura":1.80, "Precio":"12 millones", "posicion":"Extremos derecho"},
+    21: {"Nombre":"Paulo Dybala", "Edad":28, "altura":1.77, "Precio":"35 millones", "posicion":"Media Punta"},
+    19: {"Nombre":"Nicolas Otamendi", "Edad":34, "altura":1.83, "Precio":"3.5 millones", "posicion":"Defensa central"},
+    1: {"Nombre":"Franco Armani", "Edad":35, "altura":1.89, "Precio":"3.5 millones", "posicion":"Portero"},
+    8: {"Nombre": "Marcos Acuña", "Edad": 32, "altura": 1.70, "Precio": "15 millones", "posicion": "Defensa"},
+    23: {"Nombre": "Emiliano Martinez (Dibu)", "Edad": 31, "altura": 1.95, "Precio": "28 millones", "posicion": "Portero"},
+    20: {"Nombre": "Alexis Mac Allister", "Edad": 24, "altura": 1.76, "Precio": "70 millones", "posicion": "Mediocampo"},
+}
+#muestra un elemento del arreglo
+print(seleccionArgentina[10])
+
+#los muestra de manera mas ordenada
+for llave, valor in seleccionArgentina.items():
+    print(llave, valor)
+
+print("tenemos cargados en el diccionario la cantidad de jugadores: ",end="")
+print(len(seleccionArgentina))
+
+#pilas usando listas
+pila = [1, 2, 3]
+
+#Agregamos elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
+
+#sacamos elementos desde el final
+elementoBorrado = pila.pop() #quita el ultimo elemento y lo guarda en la variable
+print(f"sacamos el elemento: {elementoBorrado}")
+print(f"la pila ahora quedo asi: {pila}")
+
+#colas con listas
+#estructura de datos tipo fifo(first input / first output)
+cola = ["Ariel", "Osvaldo", "Liliana", "Pilar"]
+
+#agregamos elementos al final de la cola
+cola.append("Natalia")
+cola.append("Jose")
+print(cola)
+
+#sacamos elementos de la cola
+seRetira= cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+
+seRetira= cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+
+seRetira= cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+
+seRetira= cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+
+seRetira= cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+
+seRetira= cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+
+#seguimos mostrando como recorrer un diccionario con el ciclo for
+for i in  seleccionArgentina:
+    print(f"{i} -> {seleccionArgentina[i]}")
