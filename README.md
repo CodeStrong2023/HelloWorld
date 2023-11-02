@@ -1,6 +1,6 @@
 # HelloWorld
 ### Repositorio del grupo Hello World de la cohorte 2023
-Integrado por:
+#### Integrado por:
 - Carballo Florencia
 - Castillo Germán
 - Eugenio Leandro
@@ -9,3 +9,4 @@ Integrado por:
 - Karzovnik Mirco
 - Palleres Rocío
 - Hernan Raso
+#### [Acceso al repositorio del Proyecto](https://github.com/CodeStrong2023/HelloWorld-Projecto-Final)
