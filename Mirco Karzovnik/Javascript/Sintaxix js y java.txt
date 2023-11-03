@@ -1,0 +1,28 @@
+Sintaxis similares entre Java y JavaScript
+Operadores Simplicados
++=
+-=
+*=
+/=
+
+Operadores aritmericos 
++
+-
+*
+/
+
+Operadores de Asignacion
+=
+
+Operadores de comparacion
+==
+
+Documentar
+// = Para una linea de comentario 
+/* /* = Para multiples lineas de comentarios
+
+Operador de Aumento
+++
+
+Operador de Decremento 
+--
