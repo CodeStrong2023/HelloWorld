@@ -1,0 +1,19 @@
+""" Ejercicio 3: 
+Intercambiar el valor de dos variables.
+Por ejemplo: 
+a = 10    ->    a = 5
+b = 5     ->    b = 10
+ """
+a = 10;
+b = 5;
+aux = a;
+
+print(f'a = {a}')
+print(f'b = {b}')
+
+a = b;
+b = aux;
+
+print(f'ahora a es {a} y b es {b}')
+
+
