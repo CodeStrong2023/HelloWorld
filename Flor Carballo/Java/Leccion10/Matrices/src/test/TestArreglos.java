@@ -20,6 +20,7 @@ public class TestArreglos {
         for(int i = 0; i < edades.length; i++){
             System.out.println("edades y sus elementos "+i+": "+edades[i]);
             
+            
         }
     }
 }

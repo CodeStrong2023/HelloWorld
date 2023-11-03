@@ -28,6 +28,7 @@ public class TestMatrices {
             }
         }
     
+        
         //Sintaxis clásica
         //String frutas[][] = new String[3][2];
         
